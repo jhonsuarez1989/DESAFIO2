@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="desafio2.js"></script>
+</head>
+    <title>Desafio 2</title>
+<body>
+    <h1>ALGORITMO JS CONDICIONAL</h1>
+    <script>
+        let nombres = prompt("Ingresar nombres");
+        let apellidos = prompt("Ingresar apellidos");
+        let nota1 = prompt("Ingresar calificación Matemáticas");
+        let nota2 = prompt("Ingresar calificación Inglés");
+        const promedio = (parseFloat(nota1)+parseFloat(nota2))/2;
+        if (0<=promedio && promedio<=2.9){
+            console.log("Nivel de estudiante BAJO");
+            alert("¡HOLA! "+nombres + " " +apellidos +"\n" +"\nEl siguiente sistema de Calificación se contempla de 0 a 5:"
+            +"\nDefinitiva Matemáticas: "+nota1 +"\nDefinitiva Inglés: "+nota2 +"\nPromedio final del corte es: "+promedio 
+            +"\n" +"\nActualmente existen 4 niveles: *BAJO *BÁSICO *ALTO Y *SUPERIOR " +"\nTu nivel actual es: BAJO");
+        }
+        if (3<=promedio && promedio<=4){
+            console.log("Nivel de estudiante BÁSICO");
+            alert("¡HOLA! "+nombres + " " +apellidos +"\n" +"\nEl siguiente sistema de Calificación se contempla de 0 a 5:"
+            +"\nDefinitiva Matemáticas: "+nota1 +"\nDefinitiva Inglés: "+nota2 +"\nPromedio final del corte es: "+promedio 
+            +"\n" +"\nActualmente existen 4 niveles: *BAJO *BÁSICO *ALTO Y *SUPERIOR " +"\nTu nivel actual es: BÁSICO");
+        }
+        if (4<=promedio && promedio<=4.6){
+            console.log("Nivel de estudiante ALTO");
+            alert("¡HOLA! "+nombres + " " +apellidos +"\n" +"\nEl siguiente sistema de Calificación se contempla de 0 a 5:"
+            +"\nDefinitiva Matemáticas: "+nota1 +"\nDefinitiva Inglés: "+nota2 +"\nPromedio final del corte es: "+promedio 
+            +"\n" +"\nActualmente existen 4 niveles: *BAJO *BÁSICO *ALTO Y *SUPERIOR " +"\nTu nivel actual es: ALTO");
+        }
+        if (4.7<=promedio && promedio<=5){
+            console.log("Nivel de estudiante SUPERIOR");
+            alert("¡HOLA! "+nombres + " " +apellidos +"\n" +"\nEl siguiente sistema de Calificación se contempla de 0 a 5:"
+            +"\nDefinitiva Matemáticas: "+nota1 +"\nDefinitiva Inglés: "+nota2 +"\nPromedio final del corte es: "+promedio 
+            +"\n" +"\nActualmente existen 4 niveles: *BAJO *BÁSICO *ALTO Y *SUPERIOR " +"\nTu nivel actual es: SUPERIOR");
+        }
+    </script>
+</body>
+</html>
